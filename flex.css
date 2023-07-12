@@ -1,0 +1,78 @@
+/*
+    default values of properties
+    >> flex-grow:0
+    >> flex-shrink: 1
+    >> flex-basis: auto
+*/
+
+body{
+    margin: 0;
+}
+.container{
+    border: 6px solid black;
+    display: flex;
+    height: 400px;
+    /* flex-flow: row wrap-reverse; /* flex-direction flex-wrap */
+    /* justify-content: space-evenly; */
+    /* align-items: baseline; */
+    /* align-items: center; */
+}
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    width: 8rem;
+}
+
+.item-1{
+    background-color: rgb(55, 162, 255);
+    /* padding: 3rem; */
+    flex-basis: auto;
+}
+
+.item-2{
+    background-color: rgb(255, 173, 66);
+    /* padding: 1.5rem; */
+}
+
+.item-3{
+    background-color: rgb(25, 60, 60);
+    /* font-size: 3rem; */
+    order: 1;
+    align-self: flex-start;
+}
+
+.item-4{
+    background-color:rgb(0, 85, 56);
+    /* flex-grow: 2; */
+    flex: 1 2 auto;
+    align-self: flex-end;
+
+}
+
+.item-5{
+    background-color:rgb(39, 52, 52);
+    /* flex-grow: 1; */
+}
+
+.item-6{
+    background-color:rgb(255, 255, 111);
+    color: black;
+    align-self: center;
+}
+
+.item-7{
+    background-color:rgb(0, 223, 138);
+    order: 2;
+}
+
+.item-8{
+    background-color:rgb(105, 3, 3);
+}
+
+.item-9{
+    background-color:rgb(255, 153, 0);
+}
