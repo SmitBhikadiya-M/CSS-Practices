@@ -1,18 +1,14 @@
-import CodeCMP from '../CodeCMP/CodeCMP';
-import OutputCMP from '../OutputCMP/OutputCMP';
-import './main.css'
+import ScreenGenerater from "../ScreenGenerator/ScreenGenerator";
+import "./main.css";
 
-const Main = ({ code, hookName, explanationCMP }) => {
-    return <>
-        <div className='main'>
-            <div className='codePreviewWrapper'>
-                <CodeCMP code={code} heading={hookName} />
-            </div>
-            <div className='codeOutputWrapper'>
-                <OutputCMP explanationCMP={explanationCMP} />
-            </div>
-        </div>
+const Main = (props) => {
+  return (
+    <>
+      <div className="main">
+        <ScreenGenerater {...props} />
+      </div>
     </>
-}
+  );
+};
 
 export default Main;
