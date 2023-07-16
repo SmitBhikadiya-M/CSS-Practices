@@ -1,14 +1,15 @@
-import CodeCMP from "../CodeCMP/CodeCMP";
-import OutputCMP from "../OutputCMP/OutputCMP";
+import Code from "../Code/Code";
+import Output from "../Output/Output";
+import "./screenGenerator.css";
 
 const ScreenGenerater = ({ code, hookName, explanationCMP }) => {
   return (
     <>
       <div className="codePreviewWrapper">
-        <CodeCMP code={code} heading={hookName} />
+        <Code code={code} heading={hookName} />
       </div>
       <div className="codeOutputWrapper">
-        <OutputCMP explanationCMP={explanationCMP} />
+        <Output explanationCMP={explanationCMP} />
       </div>
     </>
   );

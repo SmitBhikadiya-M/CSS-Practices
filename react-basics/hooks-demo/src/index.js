@@ -2,10 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import UseStateDemo, {
-  UseStateDemoAsString,
-} from "./components/Hooks/UseStateDemo";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import UseStateDemo from "./components/Hooks/UseStateDemo";
 import UseReducerDemo from "./components/Hooks/UseReducerDemo";
 import UseEffectDemo from "./components/Hooks/UseEffectDemo";
 import UseLayoutEffectDemo from "./components/Hooks/UseLayoutEffectDemo";
@@ -19,7 +17,7 @@ async function renderApp() {
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<App />}></Route>
+          <Route exact path="/" element={<Navigate to={"/useState"} />}></Route>
           <Route path="/useState/output" element={<UseStateDemo />}></Route>
           <Route path="/useReducer/output" element={<UseReducerDemo />}></Route>
           <Route path="/useEffect/output" element={<UseEffectDemo />}></Route>
