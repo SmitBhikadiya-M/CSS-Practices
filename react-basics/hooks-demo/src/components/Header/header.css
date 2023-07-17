@@ -26,19 +26,22 @@ header {
     margin-bottom: 0;
 }
 
-.nav-list li {
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+    padding: 8px 10px;
     background-color: #00183d;
     border-radius: 5px;
-    padding: 8px 10px;
     cursor: pointer;
     margin: 0 5px;
 }
 
-.nav-list li:hover{
+.nav-list li a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.169);
 }
 
-.nav-list li.active{
+.active {
     transform: scale(1.05);
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.169);
 }

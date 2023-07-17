@@ -1,0 +1,9 @@
+.output {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.explanation {
+    flex: 1;
+}
