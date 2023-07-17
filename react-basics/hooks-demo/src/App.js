@@ -9,8 +9,8 @@ import Outputframe from "./components/Outputframe/Outputframe";
 function App() {
   const currentLocation = useLocation();
   const state = currentLocation.pathname.split("/")[1];
-
   return (
+
     <Container>
       <Header />
       <Main
@@ -20,7 +20,7 @@ function App() {
           // eslint-disable-next-line jsx-a11y/iframe-has-title
           STATES[state] ? (
             <Outputframe
-              src={`http://localhost:3000/${state}/output`}
+              src={`${window.location.origin}/${state}/output`}
               width={"100%"}
               height={"100%"}
             />
