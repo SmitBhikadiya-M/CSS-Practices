@@ -9,37 +9,37 @@ const Header = () => {
         <nav className="nav">
           <ul className="nav-list">
             <li className="nav-item">
-              <NavLink activeClassName="active" to={"/useState"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useState"}>
                 useState
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useEffect"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useEffect"}>
                 useEffect
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useLayoutEffect"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useLayoutEffect"}>
                 useLayoutEffect
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useReducer"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useReducer"}>
                 useReducer
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useCallback"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useCallback"}>
                 useCallback
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useMemo"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useMemo"}>
                 useMemo
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink activeClassName={"active"} to={"/useRef"}>
+              <NavLink className={({isActive}) => isActive ? 'active': 'none'} to={"/useRef"}>
                 useRef
               </NavLink>
             </li>
