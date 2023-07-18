@@ -1,11 +1,17 @@
-import ScreenGenerater from "../ScreenGenerator/ScreenGenerator";
+import Code from "../Code/Code";
+import Output from "../Output/Output";
 import "./main.css";
 
-const Main = (props) => {
+const Main = ({code, hookName, explanationCMP}) => {
   return (
     <>
       <div className="main">
-        <ScreenGenerater {...props} />
+        <div className="codePreviewWrapper">
+          <Code code={code} heading={hookName} />
+        </div>
+        <div className="codeOutputWrapper">
+          <Output explanationCMP={explanationCMP} />
+        </div>
       </div>
     </>
   );
