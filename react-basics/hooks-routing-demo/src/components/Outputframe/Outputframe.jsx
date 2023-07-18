@@ -4,7 +4,7 @@ import React from "react";
 export default function Outputframe({ src, width, height }) {
   return (
     <div className="frameWrapper">
-      <iframe className="iframe" src={src} width={width} height={height} />
+      <iframe title="outputframe" className="iframe" src={src} width={width} height={height} />
     </div>
   );
 }
