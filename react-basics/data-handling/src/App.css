@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.post{
+    border-radius: 5px;
+    max-width: 300px;
+    min-height: 200px;
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.post-title{
+    max-height: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-body{
+    flex:1;
+}
+
+.post-action{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.btn-red{
+    background: rgb(147, 0, 0);
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.post-comment-popup{
+    cursor: pointer;
+}
+
+.comments-popup{
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    box-shadow: 0 0 2px 2px #000000;
+    z-index: 99;
+    width: 90%;
+    text-align: left;
+    background-color: #00716d;
+    transition: all 0.4s ease;
+    left: 15px;
+    max-height: 370px;
+    overflow: auto;
+}
+
+.comments-popup.hide{
+    display: none;
+}
+
+.comments-popup ul{
+    padding: 0;
+    margin: 0;
+}
+.comments-popup ul li{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.587);
+    padding: 5px 10px;
+}
+
+.comments-popup ul li span{
+    font-weight: 700;
+    color: wheat;
+}
+
+
