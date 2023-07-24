@@ -1,1 +1,12 @@
 .codeBlock {}
+
+.blockHeader{
+    font-size: 1.6rem;
+    border-bottom: 1px solid #00183de3;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.codeWrapper{
+    padding: 0 5px;
+}

@@ -13,14 +13,16 @@ const CodeCMP = ({
     <>
       <div className="codeBlock">
         {heading && <div className="blockHeader">{heading}</div>}
-        <CopyBlock
-          language={language ?? "jsx"}
-          text={code ?? "<></>"}
-          showLineNumbers={showLineNumbers ?? true}
-          theme={theme ?? dracula}
-          wrapLines={wrapLines ?? true}
-          codeBlock
-        />
+        <div className="codeWrapper">
+          <CopyBlock
+            language={language ?? "jsx"}
+            text={code ?? "<></>"}
+            showLineNumbers={showLineNumbers ?? true}
+            theme={theme ?? dracula}
+            wrapLines={wrapLines ?? true}
+            codeBlock
+          />
+        </div>
       </div>
     </>
   );
