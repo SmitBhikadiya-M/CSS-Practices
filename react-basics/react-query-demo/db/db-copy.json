@@ -1,0 +1,32 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "userId": 1,
+            "status": "published",
+            "title": "Blood Donation Campaign",
+            "body": "Your participation can bring hope and happiness to those fighting critical illnesses. Let's make a difference!",
+            "createdAt": "1975-08-19T23:15:30.000Z"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "status": "published",
+            "title": "Cricket Tournament",
+            "body": "Dont worry about failure you only have to be right once",
+            "createdAt": "2001-08-19T23:15:30.000Z"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John",
+            "createdAt": "1975-08-25T23:12:30.000Z"
+        },
+        {
+            "id": 2,
+            "name": "Will",
+            "createdAt": "2001-10-19T23:30:30.000Z"
+        }
+    ]
+}
