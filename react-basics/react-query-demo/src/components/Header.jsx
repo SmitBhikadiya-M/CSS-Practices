@@ -79,8 +79,8 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <Link style={{ textDecoration: 'none', color: 'inherit' }} to={page.toLowerCase()}>
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Link key={page} style={{ textDecoration: 'none', color: 'inherit' }} to={page.toLowerCase()}>
+                  <MenuItem  onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 </Link>
@@ -104,12 +104,11 @@ const Header = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            MUI
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link style={{ textDecoration: 'none', color: 'inherit' }} to={page.toLowerCase()}> <Button
-                key={page}
+              <Link key={page} style={{ textDecoration: 'none', color: 'inherit' }} to={page.toLowerCase()}> <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
