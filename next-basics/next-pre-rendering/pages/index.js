@@ -10,6 +10,8 @@ export default function Home() {
       <div style={{display:'flex', gap: '10px'}}>
         <Link href={"/users"}>Users</Link>
         <Link href={"/posts"}>Posts</Link>
+        <Link href={"/products"}>Products</Link>
+        {/* <Link href={"/news"}>News</Link> */}
       </div>
     </>
   )
