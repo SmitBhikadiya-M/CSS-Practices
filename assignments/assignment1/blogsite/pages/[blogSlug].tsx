@@ -25,8 +25,8 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
                   src={postData.author.image.asset.url}
                   className="w-10 h-10 rounded-full"
                   alt="Author is Kap"
-                  width={0}
-                  height={0}
+                  width={30}
+                  height={30}
                 />
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.author.name}
@@ -37,8 +37,8 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
           <Image
             className="w-full object-cover rounded-t"
             src={postData.mainImage.asset.url}
-            height={0}
-            width={0}
+            height={600}
+            width={400}
             alt='author'
             style={{ height: "400px" }}
           />

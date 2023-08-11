@@ -46,10 +46,22 @@ const Blogs: React.FC<any> = (props) => {
     }
   }
 
+  console.log(bookmarkedList);
+  
+  if(bookmarkedList===null){
+    return "Not Found"
+  }
+
+  if(!bookmarkedList?.length){
+    return "Loading..."
+  }
+
   return (<>
     <div className='p-5 mt-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-2'>
       {
-        props.posts && props.posts.map(({ _id, mainImage, slug, title, categories }: any) => {
+        props.posts && props.posts.filter( ({slug} : any) : any => {
+            return bookmarkedList?.includes(slug.current)
+        }).map(({ _id, mainImage, slug, title, categories }: any) => {
           return <div key={_id} className='grid-flow-col'>
             <BlogCard
               blogId={_id}
