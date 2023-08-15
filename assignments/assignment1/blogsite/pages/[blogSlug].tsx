@@ -1,17 +1,22 @@
-import { client, sanityConfig } from '@/sanityClient'
-import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
-import {PortableText} from '@portabletext/react'
-import Image from 'next/image'
-import RichTextComponents from '@/utils/portableComponent'
+import { client, sanityConfig } from "@/sanityClient";
+import { useRouter } from "next/router";
+import React from "react";
+import { PortableText } from "@portabletext/react";
+import Image from "next/image";
+import RichTextComponents from "@/utils/portableComponent";
+import SEO from "@/components/SEO/SEO";
+import SanityImage from "@/components/SanityImage/SanityImage";
 
 const BlogPage: React.FC = ({ post: postData }: any) => {
-
   const router = useRouter();
-  if(router.isFallback) return <h2>Loading...</h2>
-
+  if (router.isFallback) return <h2>Loading...</h2>;
   return (
     <div className="bg-gray-200 min-h-screen p-12">
+      <SEO
+        title={postData?.seo?.seo_title ?? "blog"}
+        description={postData?.seo?.meta_description ?? "blog description"}
+      />
+
       <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
@@ -21,12 +26,10 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
                 {postData.title}
               </h2>
               <div className="flex justify-center text-gray-800">
-                <Image
-                  src={postData.author.image.asset.url}
+                <SanityImage
+                  image={postData.author.image}
+                  alt={`${postData.author.name} image`}
                   className="w-10 h-10 rounded-full"
-                  alt="Author is Kap"
-                  width={30}
-                  height={30}
                 />
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.author.name}
@@ -34,49 +37,46 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
               </div>
             </div>
           </div>
-          <Image
+          <SanityImage
+            image={postData.mainImage}
+            alt={`${postData.title} image`}
             className="w-full object-cover rounded-t"
-            src={postData.mainImage.asset.url}
-            height={600}
-            width={400}
-            alt='author'
             style={{ height: "400px" }}
           />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-          <PortableText
-            value={postData.body}
-            components={RichTextComponents}
-          />
+          <PortableText value={postData.body} components={RichTextComponents} />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export async function getStaticPaths() {
   const posts = await client.fetch(`*[_type=='post']{ _id, slug }`);
 
-  const paths = posts.map((post: any) => ({ params: { blogSlug: post.slug.current } }))
+  const paths = posts.map((post: any) => ({
+    params: { blogSlug: post.slug.current },
+  }));
 
   return {
     paths,
-    fallback: true
-  }
+    fallback: true,
+  };
 }
 
 export async function getStaticProps({ params, preview }: any) {
-
   let isDraftMode = !!preview;
-  const posts = await client.fetch(`
+  const posts = await client.fetch(
+    `
     *[_type=='post' && slug.current==$slug && (_id in path($idMatch))]{
       _id,
       title,
       slug,
       mainImage{
         asset->{
-          _id,
-          url
+          ...,
+          metadata
         }
       },
       categories[]->{
@@ -87,25 +87,35 @@ export async function getStaticProps({ params, preview }: any) {
         name,
         image{
           asset->{
-            url
+            ...,
+            metadata
           }
         }
+      },
+      seo{
+        meta_description,
+        focus_synonyms,
+        focus_keyword,
+        seo_title
       }
     }
-  `, {
-    slug: params.blogSlug,
-    idMatch: (isDraftMode ? "drafts.**" : "**")
-  });
+  `,
+    {
+      slug: params.blogSlug,
+      idMatch: isDraftMode ? "drafts.**" : "**",
+    }
+  );
 
-  if(posts.length < 1) return {
-    notFound: true
-  }
+  if (posts.length < 1)
+    return {
+      notFound: true,
+    };
 
   return {
     props: {
-      post: posts[0]
-    }
-  }
+      post: posts[0],
+    },
+  };
 }
 
-export default BlogPage
+export default BlogPage;
