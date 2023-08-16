@@ -9,12 +9,13 @@ const Header = () => {
   const { data: session, status } = useSession();
   const { pathname, push } = useRouter();
 
-  async function handleAuthentication() {
+  async function handleAuthentication(e: any) {
+    e.preventDefault();
     if (status === "authenticated") {
       await signOut({
-        redirect: false
+        redirect: false,
       });
-      push('/');
+      // push('');
     } else {
       await signIn();
     }

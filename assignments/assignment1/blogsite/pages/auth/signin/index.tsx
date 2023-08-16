@@ -17,13 +17,12 @@ const Index = () => {
       router.push(router.query.callbackUrl);
     }
 
-    if(router.query.userRegistered){
-      setTimeout(()=>{
+    if (router.query.userRegistered) {
+      setTimeout(() => {
         delete router.query.userRegistered;
         router.push(router, undefined, { shallow: true });
-      }, 3000)
+      }, 3000);
     }
-
   }, [session, status, router]);
 
   async function onSignin(e: any) {
@@ -38,18 +37,18 @@ const Index = () => {
       setError(() => res?.error);
       return;
     }
-    
+
     setFormVal(() => ({ email: "", password: "" }));
     if (res?.ok) {
       router.push(router.query.callbackUrl);
     }
-  };
+  }
 
   if (status == "loading" || status == "authenticated")
     return <p className="w-full h-full text-center pt-3">Loading...</p>;
 
   return (
-    <div className="pt-10 flex justify-center items-center">
+    <div className="h-full flex justify-center items-center">
       <div className="w-full max-w-sm">
         <form
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -60,11 +59,11 @@ const Index = () => {
               SignIn to your account
             </h2>
           </div>
-            {
-            router.query.userRegistered && <p className="p-1 transition duration-150 ease-in-out bg-green-500 text-sm rounded-sm">
-                User registered Successfully!!
-              </p>
-            }
+          {router.query.userRegistered && (
+            <p className="p-1 transition duration-150 ease-in-out bg-green-500 text-sm rounded-sm">
+              User registered Successfully!!
+            </p>
+          )}
           <div className="mb-4 pt-2">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -105,7 +104,9 @@ const Index = () => {
           </div>
           <div className="flex items-center flex-col justify-between">
             {error && (
-              <p className="w-full pb-1 text-red-600">*invalid credentials are not allowed!!</p>
+              <p className="w-full pb-1 text-red-600">
+                *invalid credentials are not allowed!!
+              </p>
             )}
             <button
               className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -116,15 +117,17 @@ const Index = () => {
             </button>
           </div>
           <div>
-          {
-            !router?.loading && <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
-            {`Don't have an account?`}
-            <Link
-              href={`/auth/signup?callbackUrl=${router.query?.callbackUrl}`}
-              className="text-red-700 pl-1 transition duration-150 ease-in-out hover:text-red-600 focus:text-red-600 active:text-red-700"
-              >Register</Link>
-          </p>
-          }
+            {!router?.loading && (
+              <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
+                {`Don't have an account?`}
+                <Link
+                  href={`/auth/signup?callbackUrl=${router.query?.callbackUrl}`}
+                  className="text-red-700 pl-1 transition duration-150 ease-in-out hover:text-red-600 focus:text-red-600 active:text-red-700"
+                >
+                  Register
+                </Link>
+              </p>
+            )}
           </div>
         </form>
       </div>

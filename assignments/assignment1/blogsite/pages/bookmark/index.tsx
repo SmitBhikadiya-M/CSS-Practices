@@ -9,6 +9,7 @@ import {
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import SEO from "@/components/SEO/SEO";
+import ToastMessage, { ToastType } from "@/components/Toast/Toast";
 
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
@@ -20,10 +21,14 @@ const Blogs: React.FC<any> = (props) => {
     setIsBlogFetched(() => false);
     async function getData() {
       const readingList = await getReadingList();
-      const blogsList = readingList
-        .filter((data) => session?.user?.email === data.email)
-      setSavedBlogs(()=>blogsList);
-      const blogs = blogsList.length > 0 ? await fetchBlogsBySlugs(blogsList.map((data) => data.slug)) : [];
+      const blogsList = readingList.filter(
+        (data) => session?.user?.email === data.email
+      );
+      setSavedBlogs(() => blogsList);
+      const blogs =
+        blogsList.length > 0
+          ? await fetchBlogsBySlugs(blogsList.map((data) => data.slug))
+          : [];
       setBookmarkedBlogs(() => blogs);
       setIsBlogFetched(() => true);
     }
@@ -32,27 +37,37 @@ const Blogs: React.FC<any> = (props) => {
     else if (status == "unauthenticated") setIsBlogFetched(true);
   }, [session, status]);
 
-  const getSlugs = useMemo(function () {
-    return savedBlogs?.map((b: any) => b.slug);
-  }, [savedBlogs])
+  const notify = React.useCallback((type: ToastType, message: string) => {
+    return ToastMessage({ type, message });
+  }, []);
 
-  const preparedIndexes = useMemo(function () {
-    return savedBlogs?.reduce((result: any, b: any, index) => {
-      if (!result[b.slug]) {
-        result[b.slug] = { id: b.id, email: b.email }
-      }
-      return result;
-    }, {})
-  }, [savedBlogs])
+  const getSlugs = useMemo(
+    function () {
+      return savedBlogs?.map((b: any) => b.slug);
+    },
+    [savedBlogs]
+  );
+
+  const preparedIndexes = useMemo(
+    function () {
+      return savedBlogs?.reduce((result: any, b: any, index) => {
+        if (!result[b.slug]) {
+          result[b.slug] = { id: b.id, email: b.email };
+        }
+        return result;
+      }, {});
+    },
+    [savedBlogs]
+  );
 
   if (status === "loading" || !isBlogFetched) {
-    return <p className="w-full h-full text-center pt-3">Loading...</p>;
+    return <p className="w-full h-full text-center">Loading...</p>;
   }
 
   if (status === "unauthenticated") {
     return (
-      <p className="w-full h-full text-center pt-3 flex flex-col gap-3 justify-center items-center">
-        <span>Access Denied</span>
+      <p className="w-full h-full text-center flex flex-col gap-3 mt-10 items-center">
+        <span className="text-red-500 text-lg font-bold">Access Denied</span>
         <Link
           href="/"
           className="border w-fit p-2 rounded-sm border-blue-700 hover:text-blue-700"
@@ -67,18 +82,22 @@ const Blogs: React.FC<any> = (props) => {
     bookmarkedBlogs === null ||
     (Array.isArray(bookmarkedBlogs) && bookmarkedBlogs.length < 1)
   ) {
-    return <p className="w-full h-full text-center pt-3">Not Found</p>;
+    return <p className="w-full h-full text-center">Not Found</p>;
   }
 
-  async function removeToReadingListHandler (id:number, slug: string){
+  async function removeToReadingListHandler(id: number, slug: string) {
     if (session?.user) {
       await removeFromList(id);
-      setBookmarkedBlogs((prev) => (prev || [])?.filter((b) => slug != b.slug.current));
+      setBookmarkedBlogs((prev) =>
+        (prev || [])?.filter((b) => slug != b.slug.current)
+      );
       setSavedBlogs((prev) => (prev || [])?.filter((b) => slug != b.slug));
+      notify(ToastType.success, "Successfully removed from bookmark list!");
     } else {
-      alert("You need to login first to remove bookmark!!");
+      notify(ToastType.warning, "You need to login first to bookmark");
+      return;
     }
-  };
+  }
 
   return (
     <>

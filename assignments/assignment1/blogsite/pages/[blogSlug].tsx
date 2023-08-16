@@ -26,23 +26,27 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
                 {postData.title}
               </h2>
               <div className="flex justify-center text-gray-800">
-                <SanityImage
-                  image={postData.author.image}
-                  alt={`${postData.author.name} image`}
-                  className="w-10 h-10 rounded-full"
-                />
+                <div className="w-10 h-10 overflow-hidden">
+                  <SanityImage
+                    image={postData.author.image}
+                    alt={`${postData.author.name} image`}
+                    className="object-cover rounded-full"
+                    style={{ width: "2.5rem", height: "2.5rem" }}
+                  />
+                </div>
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.author.name}
                 </h4>
               </div>
             </div>
           </div>
-          <SanityImage
-            image={postData.mainImage}
-            alt={`${postData.title} image`}
-            className="w-full object-cover rounded-t"
-            style={{ height: "400px" }}
-          />
+          <div className="w-full rounded-t h-96 overflow-hidden">
+            <SanityImage
+              image={postData.mainImage}
+              alt={`${postData.title} image`}
+              className="object-cover"
+            />
+          </div>
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
           <PortableText value={postData.body} components={RichTextComponents} />
@@ -67,7 +71,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, preview }: any) {
   let isDraftMode = !!preview;
-
 
   const posts = await client.fetch(
     `
@@ -110,8 +113,6 @@ export async function getStaticProps({ params, preview }: any) {
     }
   );
 
-  console.log(posts[0].mainImage);
-
   if (posts.length < 1)
     return {
       notFound: true,
@@ -121,7 +122,7 @@ export async function getStaticProps({ params, preview }: any) {
     props: {
       post: posts[0],
     },
-    revalidate: 10
+    revalidate: 10,
   };
 }
 

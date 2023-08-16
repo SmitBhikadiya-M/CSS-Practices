@@ -8,9 +8,12 @@ import {
 } from "@/utils/indexDBConfig";
 import { useSession } from "next-auth/react";
 import SEO from "@/components/SEO/SEO";
+import ToastMessage, { ToastType } from "@/components/Toast/Toast";
+import { useRouter } from "next/router";
 
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
+  const { push } = useRouter();
   const [bookmarkedList, setBookmarkedList] = useState<any[] | null>(null);
 
   useEffect(() => {
@@ -18,8 +21,9 @@ const Blogs: React.FC<any> = (props) => {
       const readingList = await getReadingList();
       if (readingList && readingList?.length) {
         setBookmarkedList((prev) => {
-          return readingList
-            .filter((data) => session?.user?.email === data.email);
+          return readingList.filter(
+            (data) => session?.user?.email === data.email
+          );
         });
       } else {
         setBookmarkedList(null);
@@ -33,45 +37,64 @@ const Blogs: React.FC<any> = (props) => {
     }
   }, [session, status]);
 
-  const addToReadingListHandler = useCallback(async function (slug: string) {
-    console.log("addToReadingListHandler ",bookmarkedList);
-    if((bookmarkedList ?? []).length >= 5){
-      return alert("You cann't add more than 5 blog post to reading list");
-    }
+  const notify = React.useCallback((type: ToastType, message: string) => {
+    return ToastMessage({ type, message });
+  }, []);
 
-    if (slug && session?.user) {
+  const addToReadingListHandler = useCallback(
+    async function (slug: string) {
+      if ((bookmarkedList ?? []).length >= 5) {
+        return notify(
+          ToastType.error,
+          "You cann't add more than 5 blog post to reading list"
+        );
+      }
+
+      if (slug && session?.user) {
         const result = await addReadingList(slug, session.user.email);
-        setBookmarkedList((prev) => [...(prev || []), {
-          id: result,
-          slug,
-          email: session.user?.email
-        }]);
-    } else {
-      alert("You need to login first to add bookmark!!");
-    }
-  }, [bookmarkedList, session?.user])
+        setBookmarkedList((prev) => [
+          ...(prev || []),
+          {
+            id: result,
+            slug,
+            email: session.user?.email,
+          },
+        ]);
+      } else {
+        notify(ToastType.warning, "You need to login first to add bookmark");
+        push("/auth/signin?callbackUrl=" + window.location.origin);
+      }
+    },
+    [bookmarkedList, notify, push, session]
+  );
 
   async function removeToReadingListHandler(id: number, slug: string) {
     if (session?.user) {
       await removeFromList(id);
       setBookmarkedList((prev) => (prev || [])?.filter((b) => slug !== b.slug));
     } else {
-      alert("You need to login first to remove bookmark!!");
+      notify(ToastType.error, "You need to login first to remove bookmark");
     }
   }
 
-  const getSlugs = useMemo(function () {
-    return bookmarkedList?.map((b: any) => b.slug);
-  }, [bookmarkedList])
+  const getSlugs = useMemo(
+    function () {
+      return bookmarkedList?.map((b: any) => b.slug);
+    },
+    [bookmarkedList]
+  );
 
-  const preparedIndexes = useMemo(function () {
-    return bookmarkedList?.reduce((result: any, b: any, index) => {
-      if (!result[b.slug]) {
-        result[b.slug] = { id: b.id, email: b.email }
-      }
-      return result;
-    }, {})
-  }, [bookmarkedList])
+  const preparedIndexes = useMemo(
+    function () {
+      return bookmarkedList?.reduce((result: any, b: any, index) => {
+        if (!result[b.slug]) {
+          result[b.slug] = { id: b.id, email: b.email };
+        }
+        return result;
+      }, {});
+    },
+    [bookmarkedList]
+  );
 
   return (
     <>
@@ -111,7 +134,6 @@ const Blogs: React.FC<any> = (props) => {
 
 export async function getStaticProps(props: any) {
   let isDraftMode = !!props.preview;
-  console.log("GET Static Props");
   const posts: any[] = await client.fetch(
     `*[_type=='post' && (_id in path($idMatch))]{
           _id,
@@ -137,7 +159,7 @@ export async function getStaticProps(props: any) {
     props: {
       posts,
     },
-    revalidate: 10
+    revalidate: 10,
   };
 }
 
