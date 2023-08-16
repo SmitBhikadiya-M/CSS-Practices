@@ -67,6 +67,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, preview }: any) {
   let isDraftMode = !!preview;
+
+
   const posts = await client.fetch(
     `
     *[_type=='post' && slug.current==$slug && (_id in path($idMatch))]{
@@ -76,6 +78,7 @@ export async function getStaticProps({ params, preview }: any) {
       mainImage{
         asset->{
           ...,
+          url,
           metadata
         }
       },
@@ -88,6 +91,7 @@ export async function getStaticProps({ params, preview }: any) {
         image{
           asset->{
             ...,
+            url,
             metadata
           }
         }
@@ -106,6 +110,8 @@ export async function getStaticProps({ params, preview }: any) {
     }
   );
 
+  console.log(posts[0].mainImage);
+
   if (posts.length < 1)
     return {
       notFound: true,
@@ -115,6 +121,7 @@ export async function getStaticProps({ params, preview }: any) {
     props: {
       post: posts[0],
     },
+    revalidate: 10
   };
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import { client } from "@/sanityClient";
 import {
@@ -19,8 +19,7 @@ const Blogs: React.FC<any> = (props) => {
       if (readingList && readingList?.length) {
         setBookmarkedList((prev) => {
           return readingList
-            .filter((data) => session?.user?.email === data.email)
-            .map((data) => data.slug);
+            .filter((data) => session?.user?.email === data.email);
         });
       } else {
         setBookmarkedList(null);
@@ -34,27 +33,49 @@ const Blogs: React.FC<any> = (props) => {
     }
   }, [session, status]);
 
-  async function addToReadingListHandler(slug: string) {
+  const addToReadingListHandler = useCallback(async function (slug: string) {
+    console.log("addToReadingListHandler ",bookmarkedList);
+    if((bookmarkedList ?? []).length >= 5){
+      return alert("You cann't add more than 5 blog post to reading list");
+    }
+
     if (slug && session?.user) {
-      await addReadingList(slug, session.user.email);
-      setBookmarkedList((prev) => [...(prev || []), slug]);
+        const result = await addReadingList(slug, session.user.email);
+        setBookmarkedList((prev) => [...(prev || []), {
+          id: result,
+          slug,
+          email: session.user?.email
+        }]);
     } else {
       alert("You need to login first to add bookmark!!");
     }
-  }
+  }, [bookmarkedList, session?.user])
 
-  async function removeToReadingListHandler(slug: string) {
-    if (slug && session?.user) {
-      await removeFromList(slug);
-      setBookmarkedList((prev) => (prev || [])?.filter((s) => slug !== s));
+  async function removeToReadingListHandler(id: number, slug: string) {
+    if (session?.user) {
+      await removeFromList(id);
+      setBookmarkedList((prev) => (prev || [])?.filter((b) => slug !== b.slug));
     } else {
       alert("You need to login first to remove bookmark!!");
     }
   }
 
+  const getSlugs = useMemo(function () {
+    return bookmarkedList?.map((b: any) => b.slug);
+  }, [bookmarkedList])
+
+  const preparedIndexes = useMemo(function () {
+    return bookmarkedList?.reduce((result: any, b: any, index) => {
+      if (!result[b.slug]) {
+        result[b.slug] = { id: b.id, email: b.email }
+      }
+      return result;
+    }, {})
+  }, [bookmarkedList])
+
   return (
     <>
-      <div className="p-5 mt-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-2">
+      <div className="p-5 my-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6">
         <SEO
           title={"blogs"}
           description={
@@ -72,8 +93,9 @@ const Blogs: React.FC<any> = (props) => {
                     mainImage={mainImage}
                     title={title}
                     slug={slug.current}
+                    preparedIndexes={preparedIndexes}
                     categories={categories}
-                    bookMarkedList={bookmarkedList}
+                    bookMarkedList={getSlugs}
                     addToReadingList={addToReadingListHandler}
                     removeToReadingList={removeToReadingListHandler}
                     authStatus={status}
@@ -89,7 +111,7 @@ const Blogs: React.FC<any> = (props) => {
 
 export async function getStaticProps(props: any) {
   let isDraftMode = !!props.preview;
-
+  console.log("GET Static Props");
   const posts: any[] = await client.fetch(
     `*[_type=='post' && (_id in path($idMatch))]{
           _id,
@@ -98,7 +120,9 @@ export async function getStaticProps(props: any) {
           mainImage{
             asset->{
               ...,
-              metadata
+             url,
+             originalFilename,
+             metadata
             }
           },
           categories[]->{
@@ -113,6 +137,7 @@ export async function getStaticProps(props: any) {
     props: {
       posts,
     },
+    revalidate: 10
   };
 }
 

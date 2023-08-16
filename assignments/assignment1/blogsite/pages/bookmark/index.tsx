@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import { client } from "@/sanityClient";
 import {
@@ -10,41 +10,20 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import SEO from "@/components/SEO/SEO";
 
-const fetchBlogsBySlugs = async (slugs: any[]) => {
-  return await client.fetch(
-    `*[_type=='post' && (slug.current in $slugs)]{
-    _id,
-    title,
-    slug,
-    mainImage{
-      asset->{
-        ...,
-        metadata
-      }
-    },
-    categories[]->{
-      title
-    }
-  }`,
-    {
-      slugs,
-    }
-  );
-};
-
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
   const [bookmarkedBlogs, setBookmarkedBlogs] = useState<any[]>([]);
+  const [savedBlogs, setSavedBlogs] = useState<any[]>([]);
   const [isBlogFetched, setIsBlogFetched] = useState(false);
 
   useEffect(() => {
     setIsBlogFetched(() => false);
     async function getData() {
       const readingList = await getReadingList();
-      const slugs = readingList
+      const blogsList = readingList
         .filter((data) => session?.user?.email === data.email)
-        .map((data) => data.slug);
-      const blogs = slugs.length > 0 ? await fetchBlogsBySlugs(slugs) : [];
+      setSavedBlogs(()=>blogsList);
+      const blogs = blogsList.length > 0 ? await fetchBlogsBySlugs(blogsList.map((data) => data.slug)) : [];
       setBookmarkedBlogs(() => blogs);
       setIsBlogFetched(() => true);
     }
@@ -52,6 +31,19 @@ const Blogs: React.FC<any> = (props) => {
     if (status == "authenticated") getData();
     else if (status == "unauthenticated") setIsBlogFetched(true);
   }, [session, status]);
+
+  const getSlugs = useMemo(function () {
+    return savedBlogs?.map((b: any) => b.slug);
+  }, [savedBlogs])
+
+  const preparedIndexes = useMemo(function () {
+    return savedBlogs?.reduce((result: any, b: any, index) => {
+      if (!result[b.slug]) {
+        result[b.slug] = { id: b.id, email: b.email }
+      }
+      return result;
+    }, {})
+  }, [savedBlogs])
 
   if (status === "loading" || !isBlogFetched) {
     return <p className="w-full h-full text-center pt-3">Loading...</p>;
@@ -78,11 +70,19 @@ const Blogs: React.FC<any> = (props) => {
     return <p className="w-full h-full text-center pt-3">Not Found</p>;
   }
 
-  const removeToReadingListHandler = () => {};
+  async function removeToReadingListHandler (id:number, slug: string){
+    if (session?.user) {
+      await removeFromList(id);
+      setBookmarkedBlogs((prev) => (prev || [])?.filter((b) => slug != b.slug.current));
+      setSavedBlogs((prev) => (prev || [])?.filter((b) => slug != b.slug));
+    } else {
+      alert("You need to login first to remove bookmark!!");
+    }
+  };
 
   return (
     <>
-      <div className="p-5 mt-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-2">
+      <div className="p-5 my-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6">
         <SEO
           title={"blogs-bookmarked"}
           description={
@@ -100,6 +100,8 @@ const Blogs: React.FC<any> = (props) => {
                   title={title}
                   slug={slug.current}
                   categories={categories}
+                  preparedIndexes={preparedIndexes}
+                  bookMarkedList={getSlugs}
                   removeToReadingList={removeToReadingListHandler}
                   authStatus={status}
                   forReadingList={true}
@@ -110,6 +112,28 @@ const Blogs: React.FC<any> = (props) => {
         )}
       </div>
     </>
+  );
+};
+
+const fetchBlogsBySlugs = async (slugs: any[]) => {
+  return await client.fetch(
+    `*[_type=='post' && (slug.current in $slugs)]{
+    _id,
+    title,
+    slug,
+    mainImage{
+      asset->{
+        ...,
+        metadata
+      }
+    },
+    categories[]->{
+      title
+    }
+  }`,
+    {
+      slugs,
+    }
   );
 };
 
