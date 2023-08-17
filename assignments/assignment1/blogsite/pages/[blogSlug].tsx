@@ -26,27 +26,23 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
                 {postData.title}
               </h2>
               <div className="flex justify-center text-gray-800">
-                <div className="w-10 h-10 overflow-hidden">
-                  <SanityImage
-                    image={postData.author.image}
-                    alt={`${postData.author.name} image`}
-                    className="object-cover rounded-full"
-                    style={{ width: "2.5rem", height: "2.5rem" }}
-                  />
-                </div>
+                <SanityImage
+                  image={postData.author.image}
+                  alt={`${postData.author.name} image`}
+                  className="w-10 h-10 object-cover rounded-full"
+                  style={{ width: "2.5rem", height: "2.5rem" }}
+                />
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.author.name}
                 </h4>
               </div>
             </div>
           </div>
-          <div className="w-full rounded-t h-96 overflow-hidden">
-            <SanityImage
-              image={postData.mainImage}
-              alt={`${postData.title} image`}
-              className="object-cover"
-            />
-          </div>
+          <SanityImage
+            image={postData.mainImage}
+            alt={`${postData.title} image`}
+            className="w-full rounded-t h-96 object-cover"
+          />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
           <PortableText value={postData.body} components={RichTextComponents} />
@@ -80,9 +76,10 @@ export async function getStaticProps({ params, preview }: any) {
       slug,
       mainImage{
         asset->{
-          ...,
+          _id,
           url,
-          metadata
+          metadata,
+          originalFilename
         }
       },
       categories[]->{
@@ -93,9 +90,10 @@ export async function getStaticProps({ params, preview }: any) {
         name,
         image{
           asset->{
-            ...,
+            _id,
             url,
-            metadata
+            metadata,
+            originalFilename
           }
         }
       },

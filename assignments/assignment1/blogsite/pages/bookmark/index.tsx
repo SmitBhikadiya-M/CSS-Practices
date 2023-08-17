@@ -61,7 +61,9 @@ const Blogs: React.FC<any> = (props) => {
   );
 
   if (status === "loading" || !isBlogFetched) {
-    return <p className="w-full h-full text-center">Loading...</p>;
+    return <p className="w-full h-full text-center flex flex-col gap-3 mt-10 items-center">
+      <span className="text-lg">Loading...</span>
+    </p>;
   }
 
   if (status === "unauthenticated") {
@@ -82,7 +84,9 @@ const Blogs: React.FC<any> = (props) => {
     bookmarkedBlogs === null ||
     (Array.isArray(bookmarkedBlogs) && bookmarkedBlogs.length < 1)
   ) {
-    return <p className="w-full h-full text-center">Not Found</p>;
+    return <p className="w-full h-full text-center flex flex-col gap-3 mt-10 items-center">
+      <span className="text-lg">Oops, Blog Not Available. <Link className="text-blue-600 hover:text-blue-700 underline" href={'/'}>Explore Others!</Link></span>
+    </p>;
   }
 
   async function removeToReadingListHandler(id: number, slug: string) {

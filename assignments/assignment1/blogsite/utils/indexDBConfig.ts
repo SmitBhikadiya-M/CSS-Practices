@@ -17,7 +17,6 @@ export async function dbInti() {
             db = e.target.result;
 
             if (!db.objectStoreNames.contains(INDEXDB)) {
-                console.log('upgrading object store');
                 db.createObjectStore(INDEXDB, { keyPath: 'id', autoIncrement: true });
             }
         }
@@ -26,7 +25,6 @@ export async function dbInti() {
             db = e.target.result;
 
             if (!db.objectStoreNames.contains(INDEXDB)) {
-                console.log('creating object store');
                 db.createObjectStore(INDEXDB, { keyPath: 'id', autoIncrement: true });
             }
 

@@ -38,9 +38,7 @@ const BlogCard = ({
     <>
       <Link href={`/${slug}`}>
         <div className="rounded overflow-hidden shadow-lg relative h-full">
-          <div className="h-60 sm:h-56 lg:h-64 overflow-hidden">
-            <SanityImage image={mainImage} />
-          </div>
+            <SanityImage image={mainImage} className="h-60 sm:h-56 lg:h-64" />
 
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 line-clamp-2" title={title}>

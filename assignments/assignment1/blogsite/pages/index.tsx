@@ -141,10 +141,10 @@ export async function getStaticProps(props: any) {
           slug,
           mainImage{
             asset->{
-              ...,
-             url,
-             originalFilename,
-             metadata
+              _id,
+              url,
+              metadata,
+              originalFilename
             }
           },
           categories[]->{
