@@ -2,21 +2,23 @@ import NextAuth from 'next-auth/next'
 import CredentialsProvider from "next-auth/providers/credentials"
 import GithubProvider from 'next-auth/providers/github'
 
+const AUTH_RESTPOINT = process.env.NEXT_PUBLIC_AUTH_REST_ENDPOINT;
+
 export const authOption = {
     providers: [
         CredentialsProvider({
             type: "credentials",
             credentials: {
-                Username: { label: 'Username', type: 'text', placeholder: 'enter your username' },
+                Email: { label: 'Email', type: 'text', placeholder: 'enter your email' },
                 Password: { label: 'Password', type: 'password', placeholder: 'enter your password' }
             },
             async authorize(cred, req) {
 
-                let res = await fetch('https://dummyjson.com/auth/login', {
+                let res = await fetch(`${AUTH_RESTPOINT}/users/login`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                        username: cred?.Username,
+                        login: cred?.Email,
                         password: cred?.Password,
                         // expiresInMins: 60, // optional
                     })
@@ -24,8 +26,8 @@ export const authOption = {
 
                 const user = await res.json();
 
-                if (user.message == 'Invalid credentials')
-                    return null
+                if(!user || user.message)
+                    return null;
 
                 return user;
             }
@@ -38,23 +40,22 @@ export const authOption = {
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
         async jwt({ token, user }: any) {
-
-            if (user?.id) {
-                token.id = user.id
-            }
-            if (user?.username) {
-                token.username = user.username;
-            }
+            // if (user?.id) {
+            //     token.id = user.id
+            // }
+            // if (user?.username) {
+            //     token.username = user.username;
+            // }
             return token
         },
         async session({ session, token }: any) {
-            session.user.id = token.id;
-            session.user.name = token.username;
+            // session.user.id = token.id;
+            // session.user.name = token.username;
             return session;
         }
     },
     pages: {
-        signIn: "/signin"
+        signIn: "/auth/signin"
     }
 }
 

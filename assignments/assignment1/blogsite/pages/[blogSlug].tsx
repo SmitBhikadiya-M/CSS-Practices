@@ -29,7 +29,8 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
                 <SanityImage
                   image={postData.author.image}
                   alt={`${postData.author.name} image`}
-                  className="w-10 h-10 rounded-full"
+                  className="w-10 h-10 object-cover rounded-full"
+                  style={{ width: "2.5rem", height: "2.5rem" }}
                 />
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.author.name}
@@ -40,8 +41,7 @@ const BlogPage: React.FC = ({ post: postData }: any) => {
           <SanityImage
             image={postData.mainImage}
             alt={`${postData.title} image`}
-            className="w-full object-cover rounded-t"
-            style={{ height: "400px" }}
+            className="w-full rounded-t h-96 object-cover"
           />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
@@ -67,6 +67,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, preview }: any) {
   let isDraftMode = !!preview;
+
   const posts = await client.fetch(
     `
     *[_type=='post' && slug.current==$slug && (_id in path($idMatch))]{
@@ -75,8 +76,10 @@ export async function getStaticProps({ params, preview }: any) {
       slug,
       mainImage{
         asset->{
-          ...,
-          metadata
+          _id,
+          url,
+          metadata,
+          originalFilename
         }
       },
       categories[]->{
@@ -87,8 +90,10 @@ export async function getStaticProps({ params, preview }: any) {
         name,
         image{
           asset->{
-            ...,
-            metadata
+            _id,
+            url,
+            metadata,
+            originalFilename
           }
         }
       },
@@ -115,6 +120,7 @@ export async function getStaticProps({ params, preview }: any) {
     props: {
       post: posts[0],
     },
+    revalidate: 10,
   };
 }
 

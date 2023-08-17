@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState, memo } from "react";
 import SanityImage from "../SanityImage/SanityImage";
 
 const BlogCard = ({
@@ -11,6 +11,7 @@ const BlogCard = ({
   slug,
   authStatus,
   bookMarkedList,
+  preparedIndexes = {},
   forReadingList = false,
 }: any) => {
   const [isBookmarked, setIsbookmarked] = useState(
@@ -18,15 +19,16 @@ const BlogCard = ({
   );
 
   useEffect(() => {
-    if (!forReadingList)
+    if (!forReadingList) {
       setIsbookmarked(bookMarkedList && bookMarkedList.includes(slug));
-    else setIsbookmarked(true);
+    } else setIsbookmarked(true);
   }, [bookMarkedList, forReadingList, slug]);
 
   const onClickReadingListHnadler = (e: any) => {
     e.preventDefault();
     if (isBookmarked || forReadingList) {
-      removeToReadingList(slug);
+      const index = preparedIndexes?.[slug]?.id;
+      removeToReadingList(index, slug);
     } else {
       addToReadingList(slug);
     }
@@ -35,8 +37,8 @@ const BlogCard = ({
   return (
     <>
       <Link href={`/${slug}`}>
-        <div className="rounded overflow-hidden shadow-lg relative">
-          <SanityImage image={mainImage} />
+        <div className="rounded overflow-hidden shadow-lg relative h-full">
+            <SanityImage image={mainImage} className="h-60 sm:h-56 lg:h-64" />
 
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 line-clamp-2" title={title}>
@@ -78,4 +80,4 @@ const BlogCard = ({
   );
 };
 
-export default BlogCard;
+export default memo(BlogCard);

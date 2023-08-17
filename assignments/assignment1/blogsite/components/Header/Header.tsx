@@ -7,13 +7,17 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const { data: session, status } = useSession();
-  const { pathname } = useRouter();
+  const { pathname, push } = useRouter();
 
-  function handleAuthentication() {
+  async function handleAuthentication(e: any) {
+    e.preventDefault();
     if (status === "authenticated") {
-      signOut();
+      await signOut({
+        redirect: false,
+      });
+      // push('');
     } else {
-      signIn();
+      await signIn();
     }
   }
   return (

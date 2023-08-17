@@ -17,8 +17,7 @@ export async function dbInti() {
             db = e.target.result;
 
             if (!db.objectStoreNames.contains(INDEXDB)) {
-                console.log('upgrading object store');
-                db.createObjectStore(INDEXDB, { keyPath: 'slug', autoIncrement: true });
+                db.createObjectStore(INDEXDB, { keyPath: 'id', autoIncrement: true });
             }
         }
 
@@ -26,8 +25,7 @@ export async function dbInti() {
             db = e.target.result;
 
             if (!db.objectStoreNames.contains(INDEXDB)) {
-                console.log('creating object store');
-                db.createObjectStore(INDEXDB, { keyPath: 'slug', autoIncrement: true });
+                db.createObjectStore(INDEXDB, { keyPath: 'id', autoIncrement: true });
             }
 
             resolve(e.target.result);
@@ -40,13 +38,20 @@ export async function dbInti() {
 }
 
 export async function addReadingList(slug: any, email: any) {
-    return new Promise(async (resolve, rejects) => {
+    return new Promise(async (resolve, reject) => {
         db = await dbInti()
         const tx = await db.transaction(INDEXDB, "readwrite");
         const store = await tx.objectStore(INDEXDB)
-        store.add({ slug, email });
+        const query = store.add({ slug, email });
+
+        query.onsuccess = () => {
+            resolve(query.result);
+        }
+        query.onerror = () => {
+            reject(query.error);
+        }
+
         tx.oncomplete = function () {
-            resolve(true);
             db.close();
         };
     })
@@ -71,17 +76,17 @@ export async function getReadingList() {
     })
 }
 
-export async function removeFromList(slug: string) {
+export async function removeFromList(id: number) {
     return new Promise(async (resolve, reject) => {
         db = await dbInti()
         const tx = await db.transaction(INDEXDB, "readwrite");
         const store = await tx.objectStore(INDEXDB)
-        const deleteSlug = store.delete(slug);
+        const deleteData = store.delete(id);
         
-        deleteSlug.onsuccess = function () {
+        deleteData.onsuccess = function () {
             resolve(true);
         }
-        deleteSlug.onerror = function () {
+        deleteData.onerror = function () {
             reject(false);
         }
         tx.oncomplete = function () {
