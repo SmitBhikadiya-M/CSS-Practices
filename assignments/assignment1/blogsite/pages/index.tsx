@@ -6,10 +6,10 @@ import {
   getReadingList,
   removeFromList,
 } from "@/utils/indexDBConfig";
+import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import SEO from "@/components/SEO/SEO";
 import ToastMessage, { ToastType } from "@/components/Toast/Toast";
-import { useRouter } from "next/router";
 
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
