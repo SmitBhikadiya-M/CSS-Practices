@@ -1,4 +1,4 @@
-import { client, sanityConfig } from "@/sanityClient";
+import { client, sanityConfig } from "@/utils/sanityClient";
 import { useRouter } from "next/router";
 import React from "react";
 import { PortableText } from "@portabletext/react";

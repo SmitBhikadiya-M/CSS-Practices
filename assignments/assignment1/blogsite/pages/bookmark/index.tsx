@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import BlogCard from "@/components/BlogCard/BlogCard";
-import { client } from "@/sanityClient";
+import { client } from "@/utils/sanity/sanityClient";
 import {
   addReadingList,
   getReadingList,

@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import BlogCard from "@/components/BlogCard/BlogCard";
-import { client } from "@/sanityClient";
 import {
   addReadingList,
   getReadingList,
@@ -10,6 +9,7 @@ import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import SEO from "@/components/SEO/SEO";
 import ToastMessage, { ToastType } from "@/components/Toast/Toast";
+import { getAllPosts } from "@/utils/sanity/sanityFetch";
 
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
@@ -134,27 +134,7 @@ const Blogs: React.FC<any> = (props) => {
 
 export async function getStaticProps(props: any) {
   let isDraftMode = !!props.preview;
-  const posts: any[] = await client.fetch(
-    `*[_type=='post' && (_id in path($idMatch))]{
-          _id,
-          title,
-          slug,
-          mainImage{
-            asset->{
-              _id,
-              url,
-              metadata,
-              originalFilename
-            }
-          },
-          categories[]->{
-            title
-          }
-        }`,
-    {
-      idMatch: isDraftMode ? "drafts.**" : "**",
-    }
-  );
+  const posts: any[] = await getAllPosts(isDraftMode);
   return {
     props: {
       posts,
