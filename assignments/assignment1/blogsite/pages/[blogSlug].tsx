@@ -1,4 +1,4 @@
-import { client, sanityConfig } from "@/sanityClient";
+import { client, sanityConfig } from "@/utils/sanity/sanityClient";
 import { useRouter } from "next/router";
 import React from "react";
 import { PortableText } from "@portabletext/react";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import RichTextComponents from "@/utils/portableComponent";
 import SEO from "@/components/SEO/SEO";
 import SanityImage from "@/components/SanityImage/SanityImage";
+import { getPostBySlug } from "@/utils/sanity/sanityFetch";
 
 const BlogPage: React.FC = ({ post: postData }: any) => {
   const router = useRouter();
@@ -68,48 +69,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, preview }: any) {
   let isDraftMode = !!preview;
 
-  const posts = await client.fetch(
-    `
-    *[_type=='post' && slug.current==$slug && (_id in path($idMatch))]{
-      _id,
-      title,
-      slug,
-      mainImage{
-        asset->{
-          _id,
-          url,
-          metadata,
-          originalFilename
-        }
-      },
-      categories[]->{
-        title
-      },
-      body,
-      author->{
-        name,
-        image{
-          asset->{
-            _id,
-            url,
-            metadata,
-            originalFilename
-          }
-        }
-      },
-      seo{
-        meta_description,
-        focus_synonyms,
-        focus_keyword,
-        seo_title
-      }
-    }
-  `,
-    {
-      slug: params.blogSlug,
-      idMatch: isDraftMode ? "drafts.**" : "**",
-    }
-  );
+  const posts: any = await getPostBySlug(params.blogSlug, isDraftMode);
 
   if (posts.length < 1)
     return {

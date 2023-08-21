@@ -1,0 +1,1190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test cases for home page should render successfully!! 1`] = `
+<div>
+  <div
+    class="p-5 my-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6"
+  >
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/tomorrow-s-tech-a-deep-dive-into-upcoming-breakthroughs"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="a387baf6-bdd2-41ef-9076-78e04b65ccf4.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="4912"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0d641b4b11db1f5e6c45cbfe56c2a0389e513e50-7360x4912.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="7360"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs"
+            >
+              Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/the-road-ahead-20-future-technologies-we-can-t-ignore"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="da1978aa-a95f-4c2d-9e41-dc505d5f0d2d.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="2731"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F70e0c3d1f55bcf9b0175b92048dae628f58948e6-4096x2731.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4096"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="The Road Ahead: 20 Future Technologies We Can't Ignore"
+            >
+              The Road Ahead: 20 Future Technologies We Can't Ignore
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/redefining-human-experience-future-technologies-and-their-implications"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="e703b51a-5afb-481d-a6e9-a32002c6a2b4.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="4480"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fd8443c30dbd39d93d345239dfa8f81ca909186a8-6720x4480.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="6720"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Redefining Human Experience: Future Technologies and Their Implications"
+            >
+              Redefining Human Experience: Future Technologies and Their Implications
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/blockchain-beyond-cryptocurrency"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="84cc2fb6-4e2a-430e-b4b6-844d13988381.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="5141"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F38ff30a3c93e7b54a8de4e4d611bacef1e5d3ff1-8298x5141.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="8298"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Blockchain Beyond Cryptocurrency"
+            >
+              Blockchain Beyond Cryptocurrency
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/from-virtual-realities-to-augmented-futures-tech-s-evolution"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="b4ba6ba3-8dca-4aa4-9aa0-c07daaaf3911.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3456"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe0bf8de88a03aed32c0017f3947f29f1e1d8a05c-4608x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4608"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="From Virtual Realities to Augmented Futures: Tech's Evolution"
+            >
+              From Virtual Realities to Augmented Futures: Tech's Evolution
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/the-future-is-now-how-cutting-edge-technologies-are-transforming-industries"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="75a83896-ef5b-436c-b186-96b9d07ae94b.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3024"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fbda986e813760499306162744a90f8fc039e9195-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4032"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="The Future is Now: How Cutting-Edge Technologies are Transforming Industries"
+            >
+              The Future is Now: How Cutting-Edge Technologies are Transforming Industries
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/rise-of-quantum-computing"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="a45b32d0-ca4c-429e-9b8f-760861e21af6.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="2967"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F8294562902baa79b81fb8e43691046fdf0de48bc-5038x2967.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="5038"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Rise of Quantum Computing"
+            >
+              Rise of Quantum Computing
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/innovations-on-the-horizon-20-future-technologies-to-watch"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="430809c1-63d9-4b88-a019-4ae1a6dcbcc1.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3120"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F3e47054fec6fcb5db5646f164e4cbebd4e49b157-4680x3120.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4680"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Innovations on the Horizon: 20 Future Technologies to Watch"
+            >
+              Innovations on the Horizon: 20 Future Technologies to Watch
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/coding-the-future-the-role-of-ai-quantum-and-biotech"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="97d22029-8ad9-465f-939a-e68a65b2410c.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="2832"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F16194cc0f43deca099dc57341858a5d2b19fb40e-4256x2832.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4256"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Coding the Future: The Role of AI, Quantum, and Biotech"
+            >
+              Coding the Future: The Role of AI, Quantum, and Biotech
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/tech-vision-2030-anticipating-the-next-wave-of-innovations"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="63095398-f902-44cd-9947-bc8aa773d4af.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3735"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F65722c0626cec17e208e29167d3586f24ab5c670-5741x3735.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="5741"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Tech Vision 2030: Anticipating the Next Wave of Innovations"
+            >
+              Tech Vision 2030: Anticipating the Next Wave of Innovations
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/beyond-the-horizon-envisioning-future-tech-possibilities"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="50eceee6-694a-46b3-bd3f-21c3173eb19d.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="2963"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F035aaba8bb31f867cf712be4bf354fff47fc073a-4608x2963.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4608"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Beyond the Horizon: Envisioning Future Tech Possibilities"
+            >
+              Beyond the Horizon: Envisioning Future Tech Possibilities
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/from-sci-fi-to-reality-a-glimpse-into-future-technologies"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="e9f83c29-2459-4a4b-904c-645bdd114cd3.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3024"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F73142a78f04806f5c50e79e5c19699e8922eb95e-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4032"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="From Sci-Fi to Reality: A Glimpse into Future Technologies"
+            >
+              From Sci-Fi to Reality: A Glimpse into Future Technologies
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/emerging-technologies-shaping-the-landscape-of-tomorrow"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="af7d0d26-0340-4fd9-bab2-2b37db7b2db1.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3024"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fe852a3676c6c703a912fa9176f7d2c86029f9885-4032x3024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4032"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Emerging Technologies: Shaping the Landscape of Tomorrow"
+            >
+              Emerging Technologies: Shaping the Landscape of Tomorrow
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/unveiling-the-future-tech-trends-that-will-shape-our-world"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="fcdeb618-6eb5-4f1d-9ef2-bea04bbee050.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3783"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F1294c331256db1381bfaeac6dae64cbe8455b299-5674x3783.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="5674"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Unveiling the Future: Tech Trends that Will Shape Our World"
+            >
+              Unveiling the Future: Tech Trends that Will Shape Our World
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/tech-disruption-2-0-navigating-the-path-of-future-innovations"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="0a0dcd47-4369-4680-82b7-80b85fd9dc3b.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="2733"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2e85232598acec705813b46b51785ea0db986b88-4096x2733.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="4096"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Tech Disruption 2.0: Navigating the Path of Future Innovations"
+            >
+              Tech Disruption 2.0: Navigating the Path of Future Innovations
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/the-wonders-of-the-universe-a-journey-through-space-and-time"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="1487fabb-c1ab-4a07-b729-dd952529e429.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="3456"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fc155d4456a3c3d7a107a33beb29c73f9181c51cf-5184x3456.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="5184"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="The Wonders of the Universe: A Journey Through Space and Time"
+            >
+              The Wonders of the Universe: A Journey Through Space and Time
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/all-you-need-to-know-about-microservices-architecture-in-2023"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="All_You_Need_to_Know_about_Microservices_Architecture_in_2019_af1c8a2df3.jpg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="563"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F0a6e52692fb9ef247ba9221c9fa639764c85b2bb-1000x563.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="1000"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="All You Need to Know about Microservices Architecture in 20"
+            >
+              All You Need to Know about Microservices Architecture in 20
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/blockchain-technology-and-its-implications-on-the-financial-platform"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="businessman_explore_metaverse_technology_with_blockchain_network_connecting_1_cf58a22745.jpg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="4024"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2F2ed828e5e89bca78832604bb8abbe941cc8c35ee-7048x4024.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="7048"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Blockchain Technology and its Implications on the Financial Platform"
+            >
+              Blockchain Technology and its Implications on the Financial Platform
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/future-proofing-society-adapting-to-the-era-of-advanced-tech"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="a928f6f8-78d7-4c58-892e-6729d360a553.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="5351"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fea6545c4a5ac051ad57a0a82d658a33ee3f9eb36-8026x5351.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="8026"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="Future-Proofing Society: Adapting to the Era of Advanced Tech"
+            >
+              Future-Proofing Society: Adapting to the Era of Advanced Tech
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="grid-flow-col"
+    >
+      <a
+        href="/ai-in-healthcare-transforming-patient-care"
+      >
+        <div
+          class="rounded overflow-hidden shadow-lg relative h-full"
+        >
+          <img
+            alt="7059a309-67ca-4cc5-b56d-cd5740c7c39b.jpeg"
+            class="h-60 sm:h-56 lg:h-64"
+            data-nimg="1"
+            decoding="async"
+            height="5304"
+            loading="lazy"
+            sizes="fill"
+            src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftt6j5gd8%2Fproduction%2Fcf0d9a714b82b1ab77b8167ea72133ee2156bb65-7952x5304.jpg%3Fq%3D75%26fit%3Dclip%26auto%3Dformat&w=3840&q=75 3840w"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="7952"
+          />
+          <div
+            class="px-6 py-4"
+          >
+            <div
+              class="font-bold text-xl mb-2 line-clamp-2"
+              title="AI in Healthcare: Transforming Patient Care"
+            >
+              AI in Healthcare: Transforming Patient Care
+            </div>
+            <p
+              class="text-gray-700 text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div
+            class="absolute right-1 top-1"
+          >
+            <button
+              class="rounded-full p-2 bg-white"
+            >
+              <img
+                alt="bookmark filled"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75"
+                srcset="/_next/image?url=%2Fassets%2Fbookmark.png&w=16&q=75 1x, /_next/image?url=%2Fassets%2Fbookmark.png&w=32&q=75 2x"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

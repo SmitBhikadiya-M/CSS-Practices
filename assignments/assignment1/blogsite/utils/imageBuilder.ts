@@ -1,4 +1,4 @@
-import { sanityConfig } from "@/sanityClient";
+import { sanityConfig } from "@/utils/sanity/sanityClient";
 import imageUrlBuilder from "@sanity/image-url";
 
 function getImage({ value, isInline }: any) {

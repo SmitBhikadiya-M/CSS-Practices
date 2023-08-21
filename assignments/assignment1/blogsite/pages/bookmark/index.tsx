@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import BlogCard from "@/components/BlogCard/BlogCard";
-import { client } from "@/sanityClient";
+import { client } from "@/utils/sanity/sanityClient";
 import {
   addReadingList,
   getReadingList,
@@ -10,6 +10,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import SEO from "@/components/SEO/SEO";
 import ToastMessage, { ToastType } from "@/components/Toast/Toast";
+import { getPostBySlugs } from "@/utils/sanity/sanityFetch";
 
 const Blogs: React.FC<any> = (props) => {
   const { data: session, status } = useSession();
@@ -27,7 +28,7 @@ const Blogs: React.FC<any> = (props) => {
       setSavedBlogs(() => blogsList);
       const blogs =
         blogsList.length > 0
-          ? await fetchBlogsBySlugs(blogsList.map((data) => data.slug))
+          ? await getPostBySlugs(blogsList.map((data) => data.slug))
           : [];
       setBookmarkedBlogs(() => blogs);
       setIsBlogFetched(() => true);
@@ -138,26 +139,5 @@ const Blogs: React.FC<any> = (props) => {
   );
 };
 
-const fetchBlogsBySlugs = async (slugs: any[]) => {
-  return await client.fetch(
-    `*[_type=='post' && (slug.current in $slugs)]{
-    _id,
-    title,
-    slug,
-    mainImage{
-      asset->{
-        ...,
-        metadata
-      }
-    },
-    categories[]->{
-      title
-    }
-  }`,
-    {
-      slugs,
-    }
-  );
-};
 
 export default Blogs;

@@ -37,7 +37,7 @@ export async function dbInti() {
     })
 }
 
-export async function addReadingList(slug: any, email: any) {
+export async function addReadingList(slug: any, email: any): Promise<any> {
     return new Promise(async (resolve, reject) => {
         db = await dbInti()
         const tx = await db.transaction(INDEXDB, "readwrite");
