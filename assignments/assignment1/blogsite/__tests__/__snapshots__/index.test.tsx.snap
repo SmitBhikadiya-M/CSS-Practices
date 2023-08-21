@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page should render successfully!! 1`] = `
+exports[`Test cases for home page should render successfully!! 1`] = `
 <div>
   <div
     class="p-5 my-10 md:px-[10%] grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6"

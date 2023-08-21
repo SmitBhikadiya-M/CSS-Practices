@@ -40,7 +40,7 @@ jest.mock('next/router', () => {
 })
 
 let posts:any = []
-describe('Home Page', () => {
+describe('Test cases for home page', () => {
   it('should render successfully!!', async () => {
     
     posts = await getAllPosts();
@@ -53,7 +53,9 @@ describe('Home Page', () => {
   it('should have match title in one of the post', async () => {
     const { getByText } = render(<Home posts={posts} />);
     await waitFor(() => {
-      expect(getByText("Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs").innerHTML).toBe("Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs");
+      expect(
+        getByText("Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs").innerHTML)
+        .toBe("Tomorrow's Tech: A Deep Dive into Upcoming Breakthroughs");
     })
   })
 })

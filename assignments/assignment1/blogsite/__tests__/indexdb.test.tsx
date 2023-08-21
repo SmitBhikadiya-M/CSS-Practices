@@ -10,7 +10,7 @@ export const testEmail = [
     'smit@gmail.com'
 ]
 
-describe('Home Page', () => {
+describe('Test cases for index db', () => {
     it('should able to connect indexDB!!', async () => {
         const connected = await dbInti();
         expect(connected).not.toBeFalsy();
